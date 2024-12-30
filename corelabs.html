@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreLabs - Professional Discord Server Creation</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #FFF;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(135deg, #ec4245, #a93235);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        header img {
+            width: 120px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            margin-top: 20px;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+            animation: slideDown 1.5s ease-in-out;
+        }
+
+        header p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            opacity: 0.8;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 20px;
+            font-size: 1rem;
+            animation: bounce 2s infinite;
+            color: white;
+            opacity: 0.7;
+        }
+
+        /* Features Section */
+        .content {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            padding: 50px;
+            border-radius: 15px;
+            background-image: url('https://media.discordapp.net/attachments/1322940025901678724/1323144018942758922/clouds.gif?ex=67737164&is=67721fe4&hm=41ca4ca1404880d3ceceee0969e092dacdb0279f5085fe5725597399fa2758d3&');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .feature-box {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            backdrop-filter: blur(15px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .feature-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: white; /* Changed text color to white */
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Added black shadow */
+        }
+
+        .feature-box p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: white; /* Changed text color to white */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Added black shadow */
+        }
+
+        /* Call to Action Button */
+        .cta-button {
+            background-color: #ec4245;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 150px; /* Adjusted Margin to Lower the Button */
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #d1393c;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #b3b3b3;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .scroll-down:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://media.discordapp.net/attachments/1322940025901678724/1323143346599759892/discord-avatar-1024-IPPO7.png?ex=677370c4&is=67721f44&hm=2f08b1795c59a787b191fc6d585475abadd59af1025e5d3f350facfbaef18290&" alt="CoreLabs Logo">
+        <h1>CoreLabs</h1>
+        <p>Professional Discord Server Creation</p>
+        <div class="scroll-down">Scroll Down ↓</div>
+    </header>
+
+    <!-- Features Section -->
+    <div class="content">
+        <h2>What We Offer</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Server Setup</h3>
+                <p>Get your Discord server set up and optimized by professionals.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Custom Emojis</h3>
+                <p>Access to a variety of custom emojis and symbols to make your server unique.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Guides & Resources</h3>
+                <p>Step-by-step guides and resources to enhance your server.</p>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <a href="#" class="cta-button">Join CoreLabs Now</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 CoreLabs. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
